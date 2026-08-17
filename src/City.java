@@ -3,23 +3,26 @@ public class City {
     public String name;
     public String country;
     public int population;
+    static int compteur;
 
     public City(String name, String country, int population){
         this.name = name;
         this.country = country;
         this.setPopulation(population);
+        compteur += 1;
     }
 
     public City(String name, int population){
         this.name = name;
         this.country = "unknown";
         this.setPopulation(population);
+        City.compteur += 1;
     }
 
     public void display(){
-        System.out.println("name : " + this.name + "\t" +
-                           "country : " + this.country + "\t" +
-                           "population : " + this.population + "\t");
+        System.out.println("Ville de " + getName() +
+                        " en " + getCountry() + " ayant " +
+                        getPopulation() + " habitants.");
     }
 
     //accesseurs
@@ -53,8 +56,8 @@ public class City {
 
     //méthodes
     public String toString() {
-        return "name : " + getName()+ "\t" +
-                "country : " + getCountry() + "\t" +
-                "population : " + getPopulation() + "\t";
+        return "Ville de " + getName() +
+                " en " + getCountry() + " ayant " +
+                getPopulation() + " habitants.";
     }
 }
