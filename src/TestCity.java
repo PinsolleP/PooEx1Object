@@ -20,6 +20,7 @@ public class TestCity {
 
         toulouse.display();
         System.out.println(toulouse);
+        System.out.println(City.compteur);
 
 
     }
