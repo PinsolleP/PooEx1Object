@@ -14,4 +14,40 @@ public class City {
                            "country : " + this.country + "\t" +
                            "population : " + this.population + "\t");
     }
+
+    //accesseurs
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public int getPopulation() {
+        return population;
+    }
+
+    public void setPopulation(int population) {
+        if (population < 0){
+            throw new RuntimeException("La population ne peut pas être négative!");
+        }
+        this.population = population;
+    }
+
+    //méthodes
+    public String toString() {
+        return "name : " + getName()+ "\t" +
+                "country : " + getCountry() + "\t" +
+                "population : " + getPopulation() + "\t";
+    }
 }
