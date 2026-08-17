@@ -4,12 +4,14 @@ public class Person {
     public String firstName;
     public int age;
     public String address;
+    public City bornCity;
 
-    public Person(String lastName, String firstName, int age, String address) {
+    public Person(String lastName, String firstName, int age, String address, City bornCity) {
         this.age = age;
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
+        this.bornCity = bornCity;
     }
     public Person(String lastName, String firstName, int age ) {
         this.age = age;
@@ -57,10 +59,19 @@ public class Person {
         this.address = address;
     }
 
+    public City getBornCity() {
+        return bornCity;
+    }
+
+    public void setBornCity(City bornCity) {
+        this.bornCity = bornCity;
+    }
+
     public String toString() {
         return "Person [lastName=" + getLastName() +
                 ", firstName=" + getFirstName() +
                 ", age=" + getAge() +
-                ", address=" + getAddress() + "]";
+                ", address=" + getAddress() +
+                "]BornCity " + getBornCity();
         }
     }
