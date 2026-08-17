@@ -7,8 +7,15 @@ public class City {
     public City(String name, String country, int population){
         this.name = name;
         this.country = country;
-        this.population = population;
+        this.setPopulation(population);
     }
+
+    public City(String name, int population){
+        this.name = name;
+        this.country = "unknown";
+        this.setPopulation(population);
+    }
+
     public void display(){
         System.out.println("name : " + this.name + "\t" +
                            "country : " + this.country + "\t" +
