@@ -84,7 +84,7 @@ Person [lastName=Biden, firstName=joe, age=0, address=unknown]Bornnull
 personnes nées en France ou habitant Paris. 
 Notez au passage que la population d’une ville n’est affichée que si elle a été remplie aussi apportez 
 les modifications nécessaires pour arriver au résultat suivant :
-Liste des personnalités
+Liste des personnalités :
 Macron , Emmanuel , 43ans , habitant L'Elysée à Paris , Ville de naissance : Amiens , France
 Sarkozy , Nicolas , 66ans , habitant Paris , Ville de naissance : Paris , France , population Paris 2000000 d'habitants
 johnson , Boris , 56ans , habitant Downing street à London , Ville de naissance : New York , USA
@@ -92,7 +92,7 @@ Depardieu , Gerard , 72ans , habitant Moscou , Ville de naissance : Châteauroux
 Kravitz , lenny , 56ans , habitant Hotel particulier à Paris , Ville de naissance : New York , USA
 Lawrence , jennifer , 30ans , habitant Louisville aux USA , Ville de naissance : Indian Hills , USA
 ---------------------------
-Liste après notre filtre
+Liste après notre filtre :
 Macron , Emmanuel , 43ans , habitant L'Elysée à Paris , Ville de naissance : Amiens , France
 Sarkozy , Nicolas , 66ans , habitant Paris , Ville de naissance : Paris , France , population Paris 2000000 d'habitants
 Depardieu , Gerard , 72ans , habitant Moscou , Ville de naissance : Châteauroux , France
