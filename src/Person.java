@@ -11,8 +11,14 @@ public class Person {
         this.lastName = lastName;
         this.address = address;
     }
-    public Person(String lastName, String firstName, int age) {
+    public Person(String lastName, String firstName, int age ) {
         this.age = age;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.address = "unknown";
+    }
+    public Person(String lastName, String firstName) {
+        this.age = 0;
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = "unknown";
@@ -52,7 +58,7 @@ public class Person {
     }
 
     public String toString() {
-        return "Person[lastName=" + getLastName() +
+        return "Person [lastName=" + getLastName() +
                 ", firstName=" + getFirstName() +
                 ", age=" + getAge() +
                 ", address=" + getAddress() + "]";
