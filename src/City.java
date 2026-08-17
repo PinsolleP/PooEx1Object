@@ -2,11 +2,16 @@ public class City {
     //attributs
     public String name;
     public String country;
-    public int residents_number;
+    public int population;
 
-    public City(String name, String country, int residents_number){
+    public City(String name, String country, int population){
         this.name = name;
         this.country = country;
-        this.residents_number = residents_number;
+        this.population = population;
+    }
+    public void display(){
+        System.out.println("name : " + this.name + "\t" +
+                           "country : " + this.country + "\t" +
+                           "population : " + this.population + "\t");
     }
 }
