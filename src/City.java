@@ -56,8 +56,8 @@ public class City {
 
     //méthodes
     public String toString() {
-        return "Ville de " + getName() +
-                " en " + getCountry() + " ayant " +
-                getPopulation() + " habitants.";
+        return " [name=" + getName() +
+                ", country=" + getCountry() +
+                ", population=" + getPopulation() + "]";
     }
 }
