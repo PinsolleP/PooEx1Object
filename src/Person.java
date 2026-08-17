@@ -5,11 +5,17 @@ public class Person {
     public int age;
     public String address;
 
-    public Person(String lastName, String firstName, int age, String address){
+    public Person(String lastName, String firstName, int age, String address) {
         this.age = age;
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
+    }
+    public Person(String lastName, String firstName, int age) {
+        this.age = age;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.address = "unknown";
     }
     //accesseurs
 
@@ -32,15 +38,23 @@ public class Person {
     public int getAge() {
         return age;
     }
+
     public void setAge(int age) {
         this.age = age;
     }
 
-    public String getAddress () {
+    public String getAddress() {
         return address;
     }
 
     public void setAddress(String address) {
         this.address = address;
     }
-}
+
+    public String toString() {
+        return "Person[lastName=" + getLastName() +
+                ", firstName=" + getFirstName() +
+                ", age=" + getAge() +
+                ", address=" + getAddress() + "]";
+        }
+    }
