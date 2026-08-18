@@ -2,7 +2,6 @@ import fr.fms.entities.City;
 import fr.fms.entities.Person;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class TestPerson {
     public static void main(String[] args) {
