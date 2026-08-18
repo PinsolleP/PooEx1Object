@@ -27,4 +27,10 @@ public class Employee extends Person {
                 + getCompany() + " , salaire : "
                 + getSalary();
     }
+
+    @Override
+    public double remuneration(){
+        return salary * 0.8;
+    }
+
 }
