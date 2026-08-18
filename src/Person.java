@@ -1,3 +1,5 @@
+import fr.fms.entities.City;
+
 public class Person {
     //attributs
     public String lastName;
