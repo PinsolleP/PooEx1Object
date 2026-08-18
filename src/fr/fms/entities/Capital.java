@@ -17,7 +17,6 @@ public class Capital extends City {
     public String toString() {
         return  getName() + " , " +
                 getCountry() + " , " +
-                getPopulation() + " d'habitants monument : " +
                 getMonument();
     }
 }
