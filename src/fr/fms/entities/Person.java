@@ -1,6 +1,6 @@
 package fr.fms.entities;
 
-public class Person {
+public abstract class Person {
     //attributs
     public String lastName;
     public String firstName;
@@ -76,4 +76,6 @@ public class Person {
                 getAddress() + " , " +
                 getBornCity();
         }
+    public abstract double remuneration();
+
     }
