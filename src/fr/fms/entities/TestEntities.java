@@ -19,7 +19,7 @@ public class TestEntities{
                         "robert", 50, "habitant rue des rosiers à Toulouse", limoges)
             };
         for (Person person : entities){
-            System.out.println(person);
+            System.out.println("salaire mensuel de " + person.getFirstName() + " " + person.getLastName() + " : " + person.remuneration());
 
         }
     }
