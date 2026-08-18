@@ -7,6 +7,8 @@ public class Commercial extends Person {
 
     public Commercial(String company, double percentageCA, String lastName, String firstName, int age, String address, City bornCity) {
         super(lastName, firstName, age, address, bornCity);
+        this.company = company;
+        this.percentageCA = percentageCA;
     }
 
     public String getCompany() { return company ; }
@@ -18,6 +20,15 @@ public class Commercial extends Person {
     public double getPercentageCA() { return percentageCA ; }
 
     public void setPercentageCA(double percentageCA) {
+        if (percentageCA < 0) {
+            throw new RuntimeException("La population ne peut pas être négative!"); }
+
         this.percentageCA = percentageCA;
+    }
+
+    public String toString() {
+        return  super.toString() + " , Entreprise : "
+                + getCompany() + " , % CA : "
+                + getPercentageCA();
     }
 }
