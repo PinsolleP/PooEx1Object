@@ -2,8 +2,20 @@ import fr.fms.entities.City;
 import fr.fms.entities.Person;
 
 import java.util.ArrayList;
-
+/**
+ * Classe de test de la classe {@link Person}.
+ *
+ * <p>Cette classe permet notamment de tester la création d'une liste
+ * de personnalités et le filtrage des personnes nées en France
+ * ou habitant à Paris.
+ *
+ */
 public class TestPerson {
+    /**
+     * Point d'entrée du programme.
+     *
+     * @param args arguments passés au programme (non utilisé ici)
+     */
     public static void main(String[] args) {
         //Person manu = new Person("Macron", "Emmanuel", 43, "Elysee à Paris", new City("Amiens","France", 0));
         //Person nico = new Person("Sarkozy", "Nicolas", 66, "habitant Paris", new City("Paris", "France", 2000000));
@@ -12,7 +24,10 @@ public class TestPerson {
         //Person lenny = new Person("Kravitz", "lenny", 56, "habitant Hotel particulier à Paris", new City("New York", "Etats_unis", 0));
         //Person jennifer = new Person("Lawrence", "jennifer", 30, "habitant Louisville aux USA", new City("Indian Hills", "Etats_unis", 0));
 
+        // Création de la liste des personnalités
         //List<Person> celebrities = new ArrayList<>();
+
+        // Ajout des personnalités dans la liste
         //celebrities.add(manu);
         //celebrities.add(nico);
         //celebrities.add(boris);
@@ -20,7 +35,9 @@ public class TestPerson {
         //celebrities.add(lenny);
         //celebrities.add(jennifer);
 
-        //for ( Person celebrity : celebrities ){
+        // Filtrage des personnes nées en France
+        // ou habitant à Paris
+        //for (Person celebrity : celebrities){
         //if (celebrity.getBornCity().getCountry().equals("France") || celebrity.getAddress().contains("Paris")){
         //System.out.println(celebrity);
     }
