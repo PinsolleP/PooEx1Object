@@ -56,8 +56,16 @@ public class City {
 
     //méthodes
     public String toString() {
-        return " [name=" + getName() +
-                ", country=" + getCountry() +
-                ", population=" + getPopulation() + "]";
+        if (getPopulation() == 0){
+            return "Ville de naissance : " + getName() +
+                   " , " + getCountry();
+            }
+            else{
+                return  "Ville de naissance : " + getName() +
+                        " , " + getCountry() +
+                        " population " + getName() + " " +
+                        getPopulation() + " d'habitants";
+            }
+
     }
 }
