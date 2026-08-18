@@ -64,9 +64,7 @@ public class City {
             }
             else{
                 return  "Ville de naissance : " + getName() +
-                        " , " + getCountry() +
-                        " population " + getName() + " " +
-                        getPopulation() + " d'habitants";
+                        " , " + getCountry();
             }
 
     }
