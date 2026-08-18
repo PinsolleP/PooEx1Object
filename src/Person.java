@@ -68,10 +68,10 @@ public class Person {
     }
 
     public String toString() {
-        return "Person [lastName=" + getLastName() +
-                ", firstName=" + getFirstName() +
-                ", age=" + getAge() +
-                ", address=" + getAddress() +
-                "]BornCity " + getBornCity();
+        return  getLastName() + " , " +
+                getFirstName() + " , " +
+                getAge() + " , " +
+                getAddress() + " , " +
+                getBornCity();
         }
     }
