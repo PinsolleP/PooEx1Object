@@ -4,6 +4,7 @@ public class Commercial extends Person {
 
     private String company;
     private double percentageCA;
+    private double CA = 50000.0;
 
     public Commercial(String company, double percentageCA, String lastName, String firstName, int age, String address, City bornCity) {
         super(lastName, firstName, age, address, bornCity);
@@ -30,5 +31,10 @@ public class Commercial extends Person {
         return  super.toString() + " , Entreprise : "
                 + getCompany() + " , % CA : "
                 + getPercentageCA();
+    }
+
+    @Override
+    public double remuneration() {
+        return CA * (percentageCA / 100);
     }
 }
