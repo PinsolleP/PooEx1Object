@@ -65,19 +65,19 @@ fr.fms.entities.City paris = new fr.fms.entities.City("Paris","France",2000000);
 fr.fms.entities.City nice = new fr.fms.entities.City("Nice", "France", 340000); 
 
 • Exercice 1.8 : 
-    Crée la classe Person avec pour attributs nom, prénom, âge, adresse. Puis 
+    Crée la classe fr.fms.entities.Person avec pour attributs nom, prénom, âge, adresse. Puis 
 tester la dans une classe TestPerson en créant plusieurs instances puis afficher les afin 
 d’obtenir le résultat suivant :
-Person [lastName=Macron, firstName=Emmanuel, age=43, address=Elysee à Paris]
-Person [lastName=Poutine, firstName=Vladimir, age=68, address=unknown]
-Person [lastName=Biden, firstName=joe, age=0, address=unknown]
+fr.fms.entities.Person [lastName=Macron, firstName=Emmanuel, age=43, address=Elysee à Paris]
+fr.fms.entities.Person [lastName=Poutine, firstName=Vladimir, age=68, address=unknown]
+fr.fms.entities.Person [lastName=Biden, firstName=joe, age=0, address=unknown]
 
 • Exercice 1.9 : 
-    Ajouter à votre classe Person un attribut « Ville de Naissance » qui est un 
+    Ajouter à votre classe fr.fms.entities.Person un attribut « Ville de Naissance » qui est un 
 objet de type fr.fms.entities.City de sorte d’obtenir ce qui suit :
-Person [lastName=Macron, firstName=Emmanuel, age=43, address=Elysee à Paris]BornCity [name=Amiens, state=France, nbInhabitants=0]
-Person [lastName=Poutine, firstName=Vladimir, age=68, address=unknown]Bornnull
-Person [lastName=Biden, firstName=joe, age=0, address=unknown]Bornnull
+fr.fms.entities.Person [lastName=Macron, firstName=Emmanuel, age=43, address=Elysee à Paris]BornCity [name=Amiens, state=France, nbInhabitants=0]
+fr.fms.entities.Person [lastName=Poutine, firstName=Vladimir, age=68, address=unknown]Bornnull
+fr.fms.entities.Person [lastName=Biden, firstName=joe, age=0, address=unknown]Bornnull
 
 • Exercice 2.0 : 
     Voici une liste de personnalité dont nous souhaitons extraire toutes les 
