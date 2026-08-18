@@ -1,5 +1,9 @@
 package fr.fms.entities;
-
+/**
+ * Représente une ville avec un nom, un pays et une population.
+ * La classe permet également de compter le nombre d'instances de City créées.
+ *
+ */
 public class City {
     //attributs
     public String name;
@@ -8,6 +12,13 @@ public class City {
     public static int compteur;
 
     public City(String name, String country, int population){
+        /**
+         * Construit une ville avec son nom, son pays et sa population.
+         *
+         * @param name nom de la ville
+         * @param country pays de la ville
+         * @param population nombre d'habitants
+         */
         this.name = name;
         this.country = country;
         this.setPopulation(population);
@@ -15,6 +26,13 @@ public class City {
     }
 
     public City(String name, int population){
+        /**
+         * Construit une ville avec son nom et sa population.
+         * Le pays est initialisé à "unknown".
+         *
+         * @param name nom de la ville
+         * @param population nombre d'habitants
+         */
         this.name = name;
         this.country = "unknown";
         this.setPopulation(population);
@@ -22,6 +40,9 @@ public class City {
     }
 
     public void display(){
+        /**
+         * Affiche les informations de la ville.
+         */
         System.out.println("Ville de " + getName() +
                         " en " + getCountry() + " ayant " +
                         getPopulation() + " habitants.");
@@ -56,16 +77,18 @@ public class City {
         this.population = population;
     }
 
-    //méthodes
+    // Méthodes
+
+    /**
+     * Retourne une représentation textuelle de la ville.
+     *
+     * @return le nom et le pays de la ville
+     */
+    @Override
     public String toString() {
-        if (getPopulation() == 0){
             return "Ville de naissance : " + getName() +
                    " , " + getCountry();
             }
-            else{
-                return  "Ville de naissance : " + getName() +
-                        " , " + getCountry();
-            }
 
     }
-}
+
