@@ -1,3 +1,5 @@
+import fr.fms.entities.City;
+
 import java.util.ArrayList;
 import java.util.List;
 
