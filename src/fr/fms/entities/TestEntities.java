@@ -1,8 +1,5 @@
 package fr.fms.entities;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class TestEntities{
     public static void main(String[] args) {
 
