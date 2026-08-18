@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class TestPerson {
     public static void main(String[] args){
         Person manu = new Person("Macron", "Emmanuel", 43, "Elysee à Paris", new City("Amiens","France", 0));
@@ -7,8 +10,18 @@ public class TestPerson {
         Person lenny = new Person("Kravitz", "lenny", 56, "habitant Hotel particulier à Paris", new City("New York", "Etats_unis", 0));
         Person jennifer = new Person("Lawrence", "jennifer", 30, "habitant Louisville aux USA", new City("Indian Hills", "Etats_unis", 0));
 
-        System.out.println(manu);
-        System.out.println(nico);
-        System.out.println(boris);
+        List<Person> celebrities = new ArrayList<>();
+        celebrities.add(manu);
+        celebrities.add(nico);
+        celebrities.add(boris);
+        celebrities.add(gege);
+        celebrities.add(lenny);
+        celebrities.add(jennifer);
+
+        for ( Person celebrity : celebrities ){
+            if (celebrity.getBornCity().getCountry().equals("France") || celebrity.getAddress().contains("Paris")){
+                System.out.println(celebrity);
+            }
+        }
     }
 }
