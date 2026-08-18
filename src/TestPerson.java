@@ -7,8 +7,8 @@ public class TestPerson {
         Person lenny = new Person("Kravitz", "lenny", 56, "habitant Hotel particulier à Paris", new City("New York", "Etats_unis", 0));
         Person jennifer = new Person("Lawrence", "jennifer", 30, "habitant Louisville aux USA", new City("Indian Hills", "Etats_unis", 0));
 
-        //System.out.println(manu);
-        //System.out.println(poutine);
-        //System.out.println(biden);
+        System.out.println(manu);
+        System.out.println(nico);
+        System.out.println(boris);
     }
 }
