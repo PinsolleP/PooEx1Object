@@ -1,9 +1,11 @@
+package fr.fms.entities;
+
 public class City {
     //attributs
     public String name;
     public String country;
     public int population;
-    static int compteur;
+    public static int compteur;
 
     public City(String name, String country, int population){
         this.name = name;
