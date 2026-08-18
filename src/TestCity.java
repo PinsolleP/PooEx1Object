@@ -9,7 +9,7 @@ public class TestCity {
     /**
      * Point d'entrée du programme.
      *
-     * @param args arguments passés au programme
+     * @param args arguments passés au programme (non utilisé ici)
      */
     public static void main(String[] args){
        City toulouse = new City("Toulouse","France",450000);
